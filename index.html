@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aconchego - Início</title>
+    <!-- Esta linha carrega o framework Tailwind CSS diretamente da internet. Nenhuma instalação é necessária! -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        // Configuração customizada para o Tailwind CSS (opcional, mas bom para fontes)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-100 font-sans text-stone-800">
+
+    <!-- Container principal que centraliza todo o conteúdo -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+
+        <!-- Card principal do negócio -->
+        <div class="w-full max-w-2xl bg-white rounded-xl shadow-2xl overflow-hidden transform transition-all hover:scale-105 duration-500">
+            
+            <!-- 1. Cabeçalho com o nome do negócio -->
+            <header class="bg-amber-900 p-6 text-center">
+                <h1 class="font-serif text-4xl md:text-5xl text-white tracking-wider">
+                    Café Aconchego
+                </h1>
+            </header>
+
+            <!-- Conteúdo principal -->
+            <main class="p-8 md:p-10 space-y-6">
+                
+                <!-- 3. Imagem Ilustrativa -->
+                <section class="flex justify-center">
+                    <img 
+                        src="https://placehold.co/600x300/854d0e/ffffff?text=Café+Artesanal" 
+                        alt="Imagem de uma xícara de café quente sobre grãos de café."
+                        class="rounded-lg shadow-lg w-full h-auto object-cover max-w-md"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x300/cccccc/ffffff?text=Imagem+Indisponível';"
+                    >
+                </section>
+                
+                <!-- 2. Seção com a descrição do negócio -->
+                <section class="text-center">
+                    <h2 class="font-serif text-2xl text-amber-900 mb-2">O seu refúgio diário</h2>
+                    <p class="text-base md:text-lg leading-relaxed text-stone-600">
+                        No Café Aconchego, cada xícara conta uma história. Oferecemos grãos selecionados, doces artesanais e um ambiente perfeito para você relaxar, trabalhar ou encontrar amigos. Venha sentir o aroma do nosso café fresco!
+                    </p>
+                </section>
+
+                <!-- 4. Botão de ação -->
+                <section class="flex justify-center pt-4">
+                    <button class="bg-amber-800 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-opacity-50">
+                        Ver Cardápio
+                    </button>
+                </section>
+
+            </main>
+        </div>
+
+        <footer class="text-center mt-8 text-stone-500 text-sm">
+            <p>Protótipo desenvolvido para a atividade prática.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
